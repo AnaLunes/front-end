@@ -1,0 +1,57 @@
+
+
+article p {
+  text-align: center;
+}
+
+form {
+  background-color: rgba(139, 71, 38, 0.75);
+  padding: 1rem;
+  color: #743320;
+}
+
+form div {
+  background: #F5F5DC;
+  margin: 1rem;
+  padding: 1rem;
+ }
+
+form div:first-child {
+  margin-top: 3rem;
+}
+
+form div:last-child {
+  margin-bottom: 3rem;
+}
+
+label {
+  font-size: 1.4rem;
+  font-family: 'PT Serif', serif;
+  font-weight: bold;
+  line-height: 1.5;
+  padding-bottom: .5rem;
+}
+
+input {
+  padding: 1rem;
+  font-family: 'Zen Old Mincho', serif;
+  color: #743320;
+}
+
+[type="tel"], [type="telefone"], textarea, label {
+  display: block;
+  width: 100%;
+  font-family: 'Zen Old Mincho', serif;
+  font-size: 1.4rem;
+  padding: 1rem;
+}
+
+[type="text"], [type="email"], textarea, label {
+  display: block;
+  width: 100%;
+  font-family: 'Zen Old Mincho', serif;
+  font-size: 1.4rem;
+  padding: 1rem;
+  color: #743320;
+}
+

@@ -1,0 +1,50 @@
+
+
+table {
+	border: 2px solid;
+	background: #fff;
+	width: 100%;
+	border-collapse: collapse;
+  font-size: 1.6rem;
+  margin-top: 1rem;
+}
+
+table tbody tr:nth-child(odd) {
+  background-color: rgba(100, 149, 237, 0.10);
+}
+
+table tbody tr:nth-child(even) {
+  background-color: rgba(25, 25, 112, 0.20);
+  color: #191970;
+}
+
+table tbody tr:hover {
+	background-color: rgba(11, 0, 109, 0.50);
+  color: #eee;
+}
+
+table th,
+table td {
+  padding: 1rem;
+  border: 2px solid;
+  border-color: rgba(25, 25, 112, 0.60);
+
+}
+
+thead th {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  background-color: rgba(39, 64, 139, 0.60);
+  color: #eee;
+  font-weight: bold;
+}
+
+tfoot tr {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-align: center;
+  background-color: rgba(39, 64, 139, 0.60);
+  color: #eee;
+  font-weight: bold;
+}

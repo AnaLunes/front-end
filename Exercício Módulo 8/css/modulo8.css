@@ -1,0 +1,85 @@
+
+@import url('tabela.css');
+
+html {
+  font-family: 'Zen Old Mincho', serif;
+}
+
+header {
+  background-color: rgb(184, 121, 90);
+
+}
+
+h1 h2 {
+  font-weight: 400;
+}
+
+h1 {
+  color: #FFFFE0;
+}
+
+p {
+  font-weight: normal;
+}
+
+img.imagem {
+  vertical-align: -50%;
+}
+
+a {
+  color: #743320;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+li a:hover {
+  color: #FFE7BA;
+  background-color: rgb(139, 71, 38);
+}
+
+article {
+  background-color: #743320;
+  color: #FFE7BA;
+}
+
+article p {
+  text-align: left;
+}
+
+.timeset {
+  width: 8%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.menu {
+  padding: 1rem;
+  width: 80%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titulo {
+  padding-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+body {
+  background-image: url("../imagens/pattern.png");
+}
+
+section {
+  background-color: rgba(245, 245, 220, 0.65);
+}
+
+footer {
+  background-color: rgb(184, 121, 90);
+  color: #FFE7BA;
+  width: 100%;
+  height: 100%;
+}
