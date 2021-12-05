@@ -11,7 +11,6 @@ body {
 .main-container {
   display: block;
   margin: 0 auto;
-  width: 100vw;
 }
 
 .container {
@@ -24,6 +23,10 @@ body {
 
 article .container  {
   border-left: solid 1px  #adc6eb;
+}
+
+.formulario .container {
+  border-left: none;
 }
 
 header {
@@ -127,6 +130,8 @@ section {
 section nav {
   display: block;
   float: left;
+  height: 80vh;
+  overflow: hidden;
   width: 25%;
 }
 
@@ -203,15 +208,25 @@ footer small {
   display: block;
 }
 
+.button-home img {
+  float: right;
+  margin-right: 6%;
+  width: 2%;
+}
+
 .cognito {
-  height: 400px !important;
+  height: 480px !important;
   overflow: hidden !important;
 }
 
 @media (max-width: 425px) {
   section nav,
   section article {
-    width: 90%;
+    width: 10%;
+  }
+
+  section nav {
+    height: 8%;
   }
 
   article .container  {
@@ -221,6 +236,7 @@ footer small {
   .container {
     padding-left: 1%;
     padding-right: 1%;
+    width: 90%;
   }
 
   article img {
@@ -240,18 +256,35 @@ footer small {
   }
 
   .menu {
-    margin-left: -100%;
-    transition: all .5s;
+    margin-left: -120%;
+    transition: all .6s;
   }
 
   .menu ul li {
-    width: 95%;
+    width: 85%;
     float: none;
   }
 
   .cognito {
-    height: 400px !important;
+    height: 480px !important;
     overflow: hidden !important;
   }
 
+  .button-home img {
+    float: right;
+    margin-right: 1%;
+    width: 5%;
+  }
+
+}
+
+@media (max-width: 768px) {
+  section nav,
+  section article {
+    width: 100%;
+  }
+
+  section nav {
+    height: 3%;
+  }  
 }
