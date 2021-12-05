@@ -211,7 +211,7 @@ footer small {
 .button-home img {
   float: right;
   margin-right: 6%;
-  width: 2%;
+  width: 25px;
 }
 
 .cognito {
@@ -268,14 +268,8 @@ footer small {
   .cognito {
     height: 480px !important;
     overflow: hidden !important;
-  }
-
-  .button-home img {
-    float: right;
-    margin-right: 1%;
-    width: 5%;
-  }
-
+  } 
+  
 }
 
 @media (max-width: 768px) {
@@ -287,4 +281,5 @@ footer small {
   section nav {
     height: 3%;
   }  
+
 }
