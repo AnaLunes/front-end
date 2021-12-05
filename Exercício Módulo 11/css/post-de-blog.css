@@ -149,6 +149,26 @@ nav a:hover {
   color: #dce6f4;
 }
 
+label[for="bt_menu"] {
+  padding: 5px;
+  background-color: #0f2443;
+  color: #dce6f4;
+  font-family: 'Zen Old Mincho', serif;
+  text-align: center;
+  font-size: 30px;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+}
+
+#bt_menu {
+  display: none;
+}
+
+label[for="bt_menu"] {
+  display: none;
+}
+
 section article {
   display: block;
   float: left;
@@ -191,12 +211,47 @@ footer small {
 @media (max-width: 425px) {
   section nav,
   section article {
-    width: 100%;
+    width: 90%;
+  }
+
+  article .container  {
+    border-left: none;
   }
 
   .container {
     padding-left: 1%;
     padding-right: 1%;
+  }
+
+  article img {
+    width: 60%;
+  }
+
+  .logo {
+    width: 40%;
+  }
+
+  label[for=bt_menu]{
+    display: block;
+  }
+
+  #bt_menu:checked ~ .menu {
+   margin-left: 0;
+  }
+
+  .menu {
+    margin-left: -100%;
+    transition: all .5s;
+  }
+
+  .menu ul li {
+    width: 95%;
+    float: none;
+  }
+
+  .cognito {
+    height: 400px !important;
+    overflow: hidden !important;
   }
 
 }
