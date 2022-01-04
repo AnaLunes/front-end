@@ -1,4 +1,6 @@
 
+@import url('responsive.css');
+
 html {
   font-size: 62.5%;
   font-family: 'Raleway', sans-serif;
@@ -14,15 +16,6 @@ body {
   width: 100%;
 }
 
-.container {
-  display: block;
-  float: left;
-  margin: 0 auto;
-  max-width: 1198px;
-  padding: 20px 20px;
-  width: 98%;
-}
-
 header {
   background-color: #0f2443;
   display: block;
@@ -31,43 +24,8 @@ header {
   width: 100%;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  width: 15%;
-}
-
 article .container  {
   border-left: solid 1px  #adc6eb;
-}
-
-h1 {
-  color: #1d55aa;
-  font-size: 2.9rem;
-}
-
-h2 {
-  color: #476a9e;
-  font-size: 1.8rem;
-  bottom: 2rem;
-}
-
-h3 {
-  color: #1d55aa;
-  font-size: 2.8rem;
-}
-
-h4 {
-  color: #476a9e;
-  font-size: 1.9rem;
-}
-
-h1, h2, h3, h4 {
-  display: flex;
-  float: none;
-  font-weight: 700;
-  justify-content: center;
-  margin-bottom: 2.5rem;
 }
 
 section {
@@ -76,27 +34,6 @@ section {
   font-size: 1.5rem;
   padding: 20px 0;
   width: 100%;
-}
-
-#banner {
-  background-image: url(https://www.folhavitoria.com.br/geral/blogs/petblog/wp-content/uploads/2019/02/tudo-que-precisa-saber-sobre-montar-um-aquario1-1.png);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 50rem;
-  width: 100%;
-}
-
-.legenda-container {
-  float: right;
-  width: 50%;
-}
-
-div.legenda {
-  background-color: rgba(15, 36, 67, 0.65);
-  border-radius: 9px;
-  margin-left: 5rem;
-  padding: 20px;
 }
 
 .legenda h1,
@@ -109,21 +46,6 @@ div.legenda {
   font-weight: 300;
 }
 
-.btn-cta {
-  background-color: #ffffff;
-  border-radius: 30px;
-  box-shadow: 2px 2px 8px #000;
-  color: #1d55aa;
-  display: inline;
-  float: right;
-  font-size: 2.3rem;
-  font-weight: 400;
-  margin-top: 4rem;
-  padding: 10px 15px;
-  text-decoration: none;
-  width: auto;
-}
-
 .btn-cta:hover {
   background-color: #321065;
   color: #f0f2f4;
@@ -134,22 +56,9 @@ div.legenda {
   padding: 40px 0;
 }
 
-#saiba-mais p {
-  font-size: 2rem;
-  line-height: 1.5;
-}
-
 #saiba-mais h3,
 #saiba-mais p {
   color: #dce6f4;
-}
-
-#saiba-mais p,
-#saiba-mais img {
-  display: block;
-  float: left;
-  padding: 10px;
-  width: 43%;
 }
 
 .duvidas {
@@ -164,20 +73,6 @@ div.legenda {
 dl {
   line-height: 1.5;
   margin: 30px 10px;
-}
-
-dt {
-  color: #1d55aa;
-  font-size: 1.9rem;
-  font-weight: 700;
-}
-
-dd {
-  color: #0f2443;
-  font-size: 1.5rem;
-  font-weight: 400;
-  margin-bottom: 20px;
-  margin-left: 20px;
 }
 
 #tenho-interesse {
@@ -213,79 +108,4 @@ footer small {
   display: block;
 }
 
-/* Fazer o responsivo e verificar códigos indesejados */
-
-@media (max-width: 425px) {
-  .container {
-    display: block;
-    justify-content: right;
-    width: 80%;
-  }
- 
-  img {
-    display: flex;
-    justify-content: left;
-    width: 35%;
-  }
-
-  #banner {
-    height: 49rem;
-    width: 100%;
-  }
-
-  .legenda-container {
-    margin-right: -5rem;
-    width: 90%;
-  }
-
-  div.legenda {
-    margin-left: 1rem;
-    padding: 10px;
-  }
-  
-  h1 {
-    font-size: 1.9rem;
-  }
-  
-  h2 {
-    font-size: 1.4rem;
-  }
-  
-  h3 {
-    font-size: 2rem;
-  }
-  
-  h4 {
-    font-size: 1.5rem;
-  }
-
-  h1, h2, h3, h4 {
-    margin-bottom: 1.3rem;
-  }
-
-  .btn-cta {
-    font-size: 1.7rem;
-    margin-top: 2.4rem;
-  }
-
-  #saiba-mais {
-    display: flex;
-    justify-content: center;
-  }
-  
-  #saiba-mais p {
-    font-size: 1.5rem;
-  }
-    
-  #saiba-mais p,
-  #saiba-mais img {
-    display: flex;
-    width: 95%;
-  }
-  
-}
-
-@media (max-width: 768px) {
- 
-
-}
+/* Verificar códigos indesejados */
