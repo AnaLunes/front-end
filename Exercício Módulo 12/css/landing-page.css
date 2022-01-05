@@ -1,6 +1,10 @@
 
 @import url('responsive.css');
 
+* {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 62.5%;
   font-family: 'Raleway', sans-serif;
@@ -24,10 +28,6 @@ header {
   width: 100%;
 }
 
-article .container  {
-  border-left: solid 1px  #adc6eb;
-}
-
 section {
   display: block;
   float: left;
@@ -36,10 +36,8 @@ section {
   width: 100%;
 }
 
-.legenda h1,
-.legenda h2 {
+.legenda h1, .legenda h2 {
   color: #cddaef;
-  line-height: 1.5;
 }
 
 .legenda h2 {
@@ -53,11 +51,11 @@ section {
 
 #saiba-mais {
   background-color: #476a9e;
+  line-height: 1.5;
   padding: 40px 0;
 }
 
-#saiba-mais h3,
-#saiba-mais p {
+#saiba-mais h3, #saiba-mais p {
   color: #dce6f4;
 }
 
@@ -66,7 +64,7 @@ section {
   padding: 40px 0;
 }
 
-.duvidas h3 {
+.dúvidas h3 {
   color: #1d55aa;
 }
 
@@ -80,10 +78,6 @@ dl {
   width: 100%;
 }
 
-#tenho-interesse h4 {
-  font-weight: 400;
-}
-
 .cognito {
   height: 460px !important;
   overflow: hidden !important;
@@ -93,19 +87,8 @@ footer {
   background-color: #0f2443;
   display: block;
   float: left;
+  line-height: 1.5;
   padding: 20px 0;
   width: 100%;
 }
 
-footer p {
-  color: #dce6f4;
-  font-size: 1.4rem;
-  line-height: 1.5;
-}
-
-footer small {
-  font-size: 80%;
-  display: block;
-}
-
-/* Verificar códigos indesejados */
