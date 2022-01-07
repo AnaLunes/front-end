@@ -78,11 +78,6 @@ dl {
   width: 100%;
 }
 
-.cognito {
-  height: 460px !important;
-  overflow: hidden !important;
-}
-
 footer {
   background-color: #0f2443;
   display: block;

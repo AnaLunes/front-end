@@ -3,13 +3,42 @@
   display: block;
   float: left;
   margin: 0 auto;
-  padding: 20px; /*20px 20px*/
+  padding: 20px 20px;
   width: 98%;
 }
 
-.logo {
+img {
   height: auto;
   width: 15%;
+}
+
+h1 {
+  color: #1d55aa;
+  font-size: 2.9rem;
+}
+
+h2 {
+  color: #476a9e;
+  font-size: 1.8rem;
+  bottom: 2rem;
+}
+
+h3 {
+  color: #1d55aa;
+  font-size: 2.8rem;
+}
+
+h4 {
+  color: #476a9e;
+  font-size: 1.9rem;
+}
+
+h1, h2, h3, h4 {
+  display: flex;
+  float: none;
+  font-weight: 700;
+  justify-content: center;
+  margin-bottom: 2.5rem;
 }
 
 #banner {
@@ -23,8 +52,6 @@
 
 .legenda-container {
   float: right;
-  line-height: 1.5;
-  text-align: justify;
   width: 50%;
 }
 
@@ -33,25 +60,6 @@ div.legenda {
   border-radius: 9px;
   margin-left: 5rem;
   padding: 20px;
-}
-
-h1, h3 {
-  color: #1d55aa;
-  font-size: 2.9rem;
-}
-
-h2, h4 {
-  color: #476a9e;
-  font-size: 1.8rem;
-}
-
-h1, h2, h3, h4 {
-  display: flex;
-  float: none;
-  font-weight: 700;
-  justify-content: center;
-  line-height: 1.5;
-  margin-bottom: 2.5rem;
 }
 
 .btn-cta {
@@ -69,10 +77,6 @@ h1, h2, h3, h4 {
   width: auto;
 }
 
-#saiba-mais {
-  text-align: justify;
-}
-
 #saiba-mais p {
   font-size: 2rem;
   line-height: 1.5;
@@ -84,10 +88,6 @@ h1, h2, h3, h4 {
   float: left;
   padding: 10px;
   width: 43%;
-}
-
-dl {
-  text-align: justify;
 }
 
 dt {
@@ -104,94 +104,36 @@ dd {
   margin-left: 20px;
 }
 
-#tenho-interesse h4 {
-  font-weight: 400;
-  text-align: justify;
-}
-
-footer p {
-  color: #dce6f4;
-  font-size: 1.4rem;
-}
-
-footer small {
-  display: block;
-  font-size: 80%;
-}
-
-.cognito {
-  height: 460px !important;
-  overflow: hidden !important;
-}
-
-@media (max-width: 810px) {
+@media (max-width: 768px) { /* verificar oq tá dando erro no responsivo do tablet */
+  
   .container {
-    padding: 0 42px;
-  }
-    
-  .logo {
-    margin-left: -2rem;
-    width: 25%;
+    display: block;
+    width: 68%;
   }
   
-  .legenda-container {
-    margin-right: -3rem;
-    width: 60%;
+  img {
+    width: 65%;
   }
 
-  h1, h3 {
-    color: #1d55aa;
-    font-size: 2.3rem;
-  }
-
-  h2, h4 {
-    color: #476a9e;
-    font-size: 1.7rem;
-  }
-  
-  h1, h2, h3, h4 {
-    margin-bottom: 2rem;
-  }
-  
-  #saiba-mais p {
-    font-size: 1.6rem;
-  }
-
-  #saiba-mais p,
-  #saiba-mais img {
-    display: flex;
-    justify-content: left;
-    margin-left: 2rem;
-    padding: 10px;
-    width: 45.9%;
-  }
-
-  #saiba-mais .btn-cta {
-    margin-top: 6.9rem;
-  }
-
-  .btn-cta {
-    font-size: 2.3rem;
-    margin-top: 4.8rem;
-  }
-
-  .duvidas .btn-cta {
-    margin-top: 1.5rem;
-  }
 }
 
-@media (max-width: 425px) {
-  .logo {
-    width: 35%;
+
+/*@media (max-width: 425px) {
+  .container {
+    width: 80%;
+  }
+ 
+  img {
+    width: 45%;
   }
 
   #banner {
-    height: 59rem;
+    height: 49rem;
     width: 100%;
   }
 
   .legenda-container {
-    margin-right: -3rem;
+    margin-right: -5rem;
     width: 90%;
   }
 
@@ -217,25 +159,24 @@ footer small {
     margin-top: 2.4rem;
   }
 
-  #saiba-mais, 
-  .duvidas, 
-  #tenho-interesse {
+  #saiba-mais, .duvidas, #tenho-interesse {
     display: flex;
     justify-content: center;
+  }
+  
+  #saiba-mais h3 {
+    text-align: justify;
   }
 
   #saiba-mais p {
     font-size: 1.5rem;
+    text-align: justify;
   }
     
   #saiba-mais p,
   #saiba-mais img {
-    margin: 0 1rem;
+    display: flex;
     width: 95%;
-  }
-
-  #saiba-mais .btn-cta {
-    margin-top: 2rem;
   }
   
   dt {
@@ -244,6 +185,7 @@ footer small {
   
   dd {
     font-size: 1.3rem;
+    text-align: justify;
   }
   
   #tenho-interesse h3 {
@@ -251,30 +193,9 @@ footer small {
   }
 
   #tenho-interesse h4 {
-    margin: 3rem 0 3rem 0;
-  }
-
-  footer p,
-  footer small {
-    font-size: 1rem;
-  }
-}
-
-@media (max-width: 375px) {
-  h1, h3 {
-    font-size: 1.8rem;
-  }
-
-  #tenho-interesse h3 {
-    font-size: 1.9rem;
-  }
-
-  #tenho-interesse h4 {
     margin: 1rem 0 3rem 0;
+    text-align: justify;
   }
+}*/
 
-  .cognito {
-    height: 530px !important;
-    overflow: hidden !important;
-  }
-}
+
